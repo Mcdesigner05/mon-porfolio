@@ -2,39 +2,418 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil - Mourtalla Ciss</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibh Consulting 2.0 - Design & Stratégie Digitale</title>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<style>
+  /* CSS responsive ici */
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+</style>
+
+
+  <!-- Google Fonts -->
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    .carousel .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+    }
+    .carousel .slide {
+      flex: 0 0 100%;
+      max-height: 400px;
+    }
+    .carousel .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .logo-flex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-img {
+      height: 50px;
+      object-fit: contain;
+    }
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+    }
+    .carousel-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      z-index: 10;
+      font-family: 'Poppins', sans-serif;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1><a href="index.html">Mourtalla Ciss</a></h1>
-      <ul>
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<div id="particles-js" style="
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+"></div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo logo-flex">
+  <img src="assets/image/logo-ibh.jpg" alt="IBH Consulting 2.0" class="logo-img" />
+  <span class="logo-text">IBH Consulting 2.0</span>
+</a>
+
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+        <li><a href="#apropos" class="nav-link">À propos</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#formation" class="nav-link">Formations</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero-slider">
-    <div class="slides">
-      <div class="slide" style="background-image:url('assets/image/image1.jpg');"></div>
-      <div class="slide" style="background-image:url('https://via.placeholder.com/1200x600?text=Stratégie+Digitale');"></div>
-      <div class="slide" style="background-image:url('https://via.placeholder.com/1200x600?text=Créativité+Visuelle');"></div>
-    </div>
-    <div class="hero-text">
-      <h1>Bienvenue chez MC Design</h1>
-      <p>Design, Stratégie Digitale & Formation</p>
-    </div>
-  </section>
+  <main>
 
-  <section class="intro">
-    <h2>À propos de moi</h2>
-    <p>Je suis Mourtalla Ciss, designer graphique, vidéaste, community manager et formateur. J'aide les marques à se démarquer grâce à une identité visuelle forte, une stratégie digitale efficace et des formations pratiques.</p>
-  </section>
+    <section class="carousel relative w-full max-h-[400px] overflow-hidden">
+      <div class="slides">
+        <div class="slide"><img src="assets/image/slide1.jpg" alt="Slide 1" /></div>
+        <div class="slide"><img src="assets/image/slide2.jpg" alt="Slide 2" /></div>
+        <div class="slide"><img src="assets/image/slide3.jpg" alt="Slide 3" /></div>
+      </div>
+      <div class="carousel-overlay">
+  Bienvenue chez <strong>IBH Consulting 2.0</strong>
+</div>
+
+    </section>
+
+    <section id="apropos" class="container section">
+      <h2>À propos de moi</h2>
+      <p>Je suis Mourtalla Ciss, designer graphique, vidéaste, community manager et formateur. J’aide les marques à se démarquer grâce à une identité visuelle forte, une stratégie digitale efficace et des formations adaptées.</p>
+    </section>
+
+    <section id="services" class="container section">
+      <h2>Mes Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+  <div class="service-icon"><i class="fas fa-paint-brush fa-spin"></i></div>
+  <h3>Design graphique</h3>
+  <p>Création de logos, flyers, affiches et vidéos professionnelles.</p>
+</article>
+
+<article class="service-card">
+  <div class="service-icon"><i class="fas fa-users fa-pulse"></i></div>
+  <h3>Community Management</h3>
+  <p>Gestion de vos réseaux sociaux pour engager votre audience.</p>
+</article>
+
+<article class="service-card">
+  <div class="service-icon"><i class="fas fa-chalkboard-teacher fa-bounce"></i></div>
+  <h3>Formations</h3>
+  <p>Bureautique, graphisme et outils numériques pour tous les niveaux.</p>
+</article>
+
+<article class="service-card">
+  <div class="service-icon"><i class="fas fa-chart-line fa-spin"></i></div>
+  <h3>Stratégie marketing digital</h3>
+  <p>Développement de stratégies pour améliorer votre visibilité en ligne.</p>
+</article>
+
+      </div>
+    </section>
+
+    <section id="portfolio" class="container section">
+  <h2>Portfolio</h2>
+  <p class="intro">Voici un aperçu de mon travail, réalisé avec passion et précision.</p>
+
+ <div class="portfolio-grid">
+  <a href="https://www.behance.net/gallery/216109609/Cration-de-Logo-pour-Prokhane-Beauty" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+    <div class="portfolio-icon"><i class="fas fa-palette fa-spin" style="color:#6a0dad; font-size: 40px;"></i></div>
+    <h3>Identité visuelle</h3>
+  </a>
+  <a href="https://www.behance.net/gallery/987654321/Flyers-et-Affiches" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+    <div class="portfolio-icon"><i class="fas fa-newspaper fa-pulse" style="color:#ff4500; font-size: 40px;"></i></div>
+    <h3>Design de flyers</h3>
+  </a>
+  <a href="https://www.behance.net/gallery/192837465/Campagne-Digitale" target="_blank" rel="noopener noreferrer" class="portfolio-item">
+    <div class="portfolio-icon"><i class="fas fa-bullhorn fa-bounce" style="color:#1e90ff; font-size: 40px;"></i></div>
+    <h3>Campagne digitale</h3>
+  </a>
+</div>
+
+
+  <div class="portfolio-link">
+    <a href="https://www.behance.net/mcdesign_le_patriote" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Voir tous les projets sur Behance</a>
+  </div>
+</section>
+
+<section id="formation" class="container section">
+  <h2>Formations</h2>
+  <p class="intro">Formez-vous avec des programmes sur mesure, adaptés à tous les niveaux pour booster vos compétences professionnelles.</p>
+
+  <div class="formation-grid">
+   <article class="formation-card">
+  <h3><i class="fas fa-palette fa-spin" style="color:#6a0dad; margin-right:8px;"></i> Infographie & Design</h3>
+  <p>Maîtrisez Photoshop, Illustrator, Canva et bien plus pour créer des visuels percutants.</p>
+</article>
+
+<article class="formation-card">
+  <h3><i class="fas fa-bullhorn fa-pulse" style="color:#ff4500; margin-right:8px;"></i> Marketing Digital</h3>
+  <p>Apprenez les bases du marketing en ligne, de la publicité sponsorisée à la gestion de contenu.</p>
+</article>
+
+<article class="formation-card">
+  <h3><i class="fas fa-file-invoice fa-bounce" style="color:#228b22; margin-right:8px;"></i> Bureautique</h3>
+  <p>Formation complète en Word, Excel, PowerPoint et Google Workspace pour une meilleure productivité.</p>
+</article>
+
+<article class="formation-card">
+  <h3><i class="fas fa-users fa-spin" style="color:#1e90ff; margin-right:8px;"></i> Community Management</h3>
+  <p>Créez, planifiez et analysez vos publications pour booster votre visibilité sur les réseaux sociaux.</p>
+</article>
+
+  </div>
+</section>
+
+<section id="chiffres" class="container section stats">
+  <h2>+2000 personnes formées par IBH Consulting 2.0</h2>
+  <p class="intro">Nous avons accompagné des centaines de débutants et étudiants à se professionnaliser dans les domaines les plus demandés du digital.</p>
+
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="counter" data-target="2000">0</span>
+      <p>Personnes formées au total</p>
+    </div>
+    <div class="stat-item">
+      <span class="counter" data-target="1400">0</span>
+      <p>Étudiants & Débutants accompagnés</p>
+    </div>
+    <div class="stat-item">
+      <span class="counter" data-target="600">0</span>
+      <p>Professionnels formés</p>
+    </div>
+    <div class="stat-item">
+      <span class="counter" data-target="4">0</span>
+      <p>Domaines : Design, Vidéo, Bureautique, Marketing</p>
+    </div>
+  </div>
+  <a href="https://wa.me/221780130424" target="_blank" class="btn btn-secondary">
+  Je veux me former
+</a>
+
+</section>
+
+
+    <section id="contact" class="container section">
+      <h2>Contactez-moi</h2>
+      <p>Vous pouvez me joindre par email ou téléphone :</p>
+      <p><a href="mailto:ibhconsulting2.0@gmail.com">ibhconsulting2.0@gmail.com</a><br />
+        <a href="tel:+221780130424">+221 78 013 04 24</a></p>
+
+      <form id="formulaire-contact" class="contact-form" novalidate>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+        <input type="email" id="email" name="email" placeholder="Votre email" required />
+        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ibh Consulting 2.0 - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('nav-menu-visible');
+      navToggle.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link =>
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('nav-menu-visible');
+        navToggle.classList.remove('open');
+      })
+    );
+  </script>
+
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / speed);
+
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    };
+
+    const section = document.querySelector('#chiffres');
+    let animated = false;
+
+    if (section) {
+      window.addEventListener('scroll', () => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight - 100;
+
+        if (!animated && sectionTop < triggerPoint) {
+          animated = true;
+          animateCounters();
+        }
+      });
+    }
+  </script>
+
+  <script>
+    let currentSlide = 0;
+    const slidesContainer = document.querySelector('.carousel .slides');
+    const totalSlides = document.querySelectorAll('.carousel .slide').length;
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    if (totalSlides > 0) {
+      setInterval(nextSlide, 4000);
+    }
+  </script>
+
+
+  <!-- WhatsApp Floating Chat Button -->
+  <a href="https://wa.me/221780130424" target="_blank" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;">
+    💬
+  </a>
+
+  <script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 50
+      },
+      "color": {
+        "value": ["#6a0dad", "#ff4500", "#1e90ff"]
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.15
+      },
+      "size": {
+        "value": 6,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": false
+        },
+        "onclick": {
+          "enable": false
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+
 </body>
 </html>
