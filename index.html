@@ -1,419 +1,596 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ibh Consulting 2.0 - Design & Stratégie Digitale</title>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<style>
-  /* CSS responsive ici */
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-  }
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBH Consulting 2.0 - Design & Stratégie Digitale</title>
+    <meta name="description" content="Design graphique, formation digitale et stratégie marketing par Mourtalla Ciss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  @media (max-width: 600px) {
-    .container {
-      max-width: 100%;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-  }
-</style>
-
-
-  <!-- Google Fonts -->
-   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/style.css" />
-
-  <style>
-    .carousel .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 300%;
-    }
-    .carousel .slide {
-      flex: 0 0 100%;
-      max-height: 400px;
-    }
-    .carousel .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  
-    .logo-flex {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-    .logo-img {
-      height: 50px;
-      object-fit: contain;
-    }
-    .logo-text {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #000;
-      font-family: 'Poppins', sans-serif;
-    }
-    .carousel-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 3rem;
-      font-weight: 700;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-      z-index: 10;
-      font-family: 'Poppins', sans-serif;
-    }
-
-  </style>
-</head>
-<body>
-<div id="particles-js" style="
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-"></div>
-
-  <header class="header">
-    <nav class="navbar container">
-      <a href="index.html" class="logo logo-flex">
-  <img src="assets/image/logo-ibh.jpg" alt="IBH Consulting 2.0" class="logo-img" />
-  <span class="logo-text">IBH Consulting 2.0</span>
-</a>
-
-
-      <button class="nav-toggle" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link active">Accueil</a></li>
-        <li><a href="#apropos" class="nav-link">À propos</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-        <li><a href="#formation" class="nav-link">Formations</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="carousel relative w-full max-h-[400px] overflow-hidden">
-      <div class="slides">
-        <div class="slide"><img src="assets/image/slide1.jpg" alt="Slide 1" /></div>
-        <div class="slide"><img src="assets/image/slide2.jpg" alt="Slide 2" /></div>
-        <div class="slide"><img src="assets/image/slide3.jpg" alt="Slide 3" /></div>
-      </div>
-      <div class="carousel-overlay">
-  Bienvenue chez <strong>IBH Consulting 2.0</strong>
-</div>
-
-    </section>
-
-    <section id="apropos" class="container section">
-      <h2>À propos de moi</h2>
-      <p>Je suis Mourtalla Ciss, designer graphique, vidéaste, community manager et formateur. J’aide les marques à se démarquer grâce à une identité visuelle forte, une stratégie digitale efficace et des formations adaptées.</p>
-    </section>
-
-    <section id="services" class="container section">
-      <h2>Mes Services</h2>
-      <div class="services-grid">
-        <article class="service-card">
-  <div class="service-icon"><i class="fas fa-paint-brush fa-spin"></i></div>
-  <h3>Design graphique</h3>
-  <p>Création de logos, flyers, affiches et vidéos professionnelles.</p>
-</article>
-
-<article class="service-card">
-  <div class="service-icon"><i class="fas fa-users fa-pulse"></i></div>
-  <h3>Community Management</h3>
-  <p>Gestion de vos réseaux sociaux pour engager votre audience.</p>
-</article>
-
-<article class="service-card">
-  <div class="service-icon"><i class="fas fa-chalkboard-teacher fa-bounce"></i></div>
-  <h3>Formations</h3>
-  <p>Bureautique, graphisme et outils numériques pour tous les niveaux.</p>
-</article>
-
-<article class="service-card">
-  <div class="service-icon"><i class="fas fa-chart-line fa-spin"></i></div>
-  <h3>Stratégie marketing digital</h3>
-  <p>Développement de stratégies pour améliorer votre visibilité en ligne.</p>
-</article>
-
-      </div>
-    </section>
-
-    <section id="portfolio" class="container section">
-  <h2>Portfolio</h2>
-  <p class="intro">Voici un aperçu de mon travail, réalisé avec passion et précision.</p>
-
- <div class="portfolio-grid">
-  <a href="https://www.behance.net/gallery/216109609/Cration-de-Logo-pour-Prokhane-Beauty" target="_blank" rel="noopener noreferrer" class="portfolio-item">
-    <div class="portfolio-icon"><i class="fas fa-palette fa-spin" style="color:#6a0dad; font-size: 40px;"></i></div>
-    <h3>Identité visuelle</h3>
-  </a>
-  <a href="https://www.behance.net/gallery/987654321/Flyers-et-Affiches" target="_blank" rel="noopener noreferrer" class="portfolio-item">
-    <div class="portfolio-icon"><i class="fas fa-newspaper fa-pulse" style="color:#ff4500; font-size: 40px;"></i></div>
-    <h3>Design de flyers</h3>
-  </a>
-  <a href="https://www.behance.net/gallery/192837465/Campagne-Digitale" target="_blank" rel="noopener noreferrer" class="portfolio-item">
-    <div class="portfolio-icon"><i class="fas fa-bullhorn fa-bounce" style="color:#1e90ff; font-size: 40px;"></i></div>
-    <h3>Campagne digitale</h3>
-  </a>
-</div>
-
-
-  <div class="portfolio-link">
-    <a href="https://www.behance.net/mcdesign_le_patriote" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Voir tous les projets sur Behance</a>
-  </div>
-</section>
-
-<section id="formation" class="container section">
-  <h2>Formations</h2>
-  <p class="intro">Formez-vous avec des programmes sur mesure, adaptés à tous les niveaux pour booster vos compétences professionnelles.</p>
-
-  <div class="formation-grid">
-   <article class="formation-card">
-  <h3><i class="fas fa-palette fa-spin" style="color:#6a0dad; margin-right:8px;"></i> Infographie & Design</h3>
-  <p>Maîtrisez Photoshop, Illustrator, Canva et bien plus pour créer des visuels percutants.</p>
-</article>
-
-<article class="formation-card">
-  <h3><i class="fas fa-bullhorn fa-pulse" style="color:#ff4500; margin-right:8px;"></i> Marketing Digital</h3>
-  <p>Apprenez les bases du marketing en ligne, de la publicité sponsorisée à la gestion de contenu.</p>
-</article>
-
-<article class="formation-card">
-  <h3><i class="fas fa-file-invoice fa-bounce" style="color:#228b22; margin-right:8px;"></i> Bureautique</h3>
-  <p>Formation complète en Word, Excel, PowerPoint et Google Workspace pour une meilleure productivité.</p>
-</article>
-
-<article class="formation-card">
-  <h3><i class="fas fa-users fa-spin" style="color:#1e90ff; margin-right:8px;"></i> Community Management</h3>
-  <p>Créez, planifiez et analysez vos publications pour booster votre visibilité sur les réseaux sociaux.</p>
-</article>
-
-  </div>
-</section>
-
-<section id="chiffres" class="container section stats">
-  <h2>+2000 personnes formées par IBH Consulting 2.0</h2>
-  <p class="intro">Nous avons accompagné des centaines de débutants et étudiants à se professionnaliser dans les domaines les plus demandés du digital.</p>
-
-  <div class="stats-grid">
-    <div class="stat-item">
-      <span class="counter" data-target="2000">0</span>
-      <p>Personnes formées au total</p>
-    </div>
-    <div class="stat-item">
-      <span class="counter" data-target="1400">0</span>
-      <p>Étudiants & Débutants accompagnés</p>
-    </div>
-    <div class="stat-item">
-      <span class="counter" data-target="600">0</span>
-      <p>Professionnels formés</p>
-    </div>
-    <div class="stat-item">
-      <span class="counter" data-target="4">0</span>
-      <p>Domaines : Design, Vidéo, Bureautique, Marketing</p>
-    </div>
-  </div>
-  <a href="https://wa.me/221780130424" target="_blank" class="btn btn-secondary">
-  Je veux me former
-</a>
-
-</section>
-
-
-    <section id="contact" class="container section">
-      <h2>Contactez-moi</h2>
-      <p>Vous pouvez me joindre par email ou téléphone :</p>
-      <p><a href="mailto:ibhconsulting2.0@gmail.com">ibhconsulting2.0@gmail.com</a><br />
-        <a href="tel:+221780130424">+221 78 013 04 24</a></p>
-
-      <form id="formulaire-contact" class="contact-form" novalidate>
-        <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
-        <input type="email" id="email" name="email" placeholder="Votre email" required />
-        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Ibh Consulting 2.0 - Tous droits réservés.</p>
-    </div>
-  </footer>
-
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('nav-menu-visible');
-      navToggle.classList.toggle('open');
-    });
-
-    document.querySelectorAll('.nav-link').forEach(link =>
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('nav-menu-visible');
-        navToggle.classList.remove('open');
-      })
-    );
-  </script>
-
-  <script>
-    const counters = document.querySelectorAll('.counter');
-    const speed = 200;
-
-    const animateCounters = () => {
-      counters.forEach(counter => {
-        const updateCount = () => {
-          const target = +counter.getAttribute('data-target');
-          const count = +counter.innerText;
-          const increment = Math.ceil(target / speed);
-
-          if (count < target) {
-            counter.innerText = count + increment;
-            setTimeout(updateCount, 20);
-          } else {
-            counter.innerText = target;
-          }
-        };
-        updateCount();
-      });
-    };
-
-    const section = document.querySelector('#chiffres');
-    let animated = false;
-
-    if (section) {
-      window.addEventListener('scroll', () => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const triggerPoint = window.innerHeight - 100;
-
-        if (!animated && sectionTop < triggerPoint) {
-          animated = true;
-          animateCounters();
-        }
-      });
-    }
-  </script>
-
-  <script>
-    let currentSlide = 0;
-    const slidesContainer = document.querySelector('.carousel .slides');
-    const totalSlides = document.querySelectorAll('.carousel .slide').length;
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-
-    if (totalSlides > 0) {
-      setInterval(nextSlide, 4000);
-    }
-  </script>
-
-
-  <!-- WhatsApp Floating Chat Button -->
-  <a href="https://wa.me/221780130424" target="_blank" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50%;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    z-index: 1000;
-    text-align: center;
-    font-size: 24px;
-    text-decoration: none;">
-    💬
-  </a>
-
-  <script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 50
-      },
-      "color": {
-        "value": ["#6a0dad", "#ff4500", "#1e90ff"]
-      },
-      "shape": {
-        "type": "circle"
-      },
-      "opacity": {
-        "value": 0.15
-      },
-      "size": {
-        "value": 6,
-        "random": true
-      },
-      "move": {
-        "enable": true,
-        "speed": 1,
-        "direction": "none",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false
-      }
-    },
-    "interactivity": {
-      "events": {
-        "onhover": {
-          "enable": false
-        },
-        "onclick": {
-          "enable": false
+    <!-- CSS & JS Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          nuit: '#0a192f',
+          accent: '#1e3a8a'
         }
       }
-    },
-    "retina_detect": true
-  });
+    }
+  }
 </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="assets/image/logo-ibh.jpg" alt="Logo IBH Consulting" class="h-10">
+                <span class="text-xl font-bold">IBH Consulting 2.0</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil"
+         class="text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-blue-900 transition-colors duration-300">
+         Accueil
+                <a href="#apropos" class="text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-blue-900 transition-colors duration-300">À propos</a>
+                <a href="#services" class="text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-blue-900 transition-colors duration-300">Services</a>
+                <a href="#portfolio" class="text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-blue-900 transition-colors duration-300">Portfolio</a>
+                <a href="#formation" class="text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-blue-900 transition-colors duration-300">Formations</a>
+                <a href="#contact" class="text-gray-800 px-4 py-2 rounded hover:text-white hover:bg-blue-900 transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white py-4 px-4 shadow-md" id="mobile-menu">
+            <a href="#accueil" class="block py-2 hover:text-purple-600">Accueil</a>
+            <a href="#apropos" class="block py-2 hover:text-purple-600">À propos</a>
+            <a href="#services" class="block py-2 hover:text-purple-600">Services</a>
+            <a href="#portfolio" class="block py-2 hover:text-purple-600">Portfolio</a>
+            <a href="#formation" class="block py-2 hover:text-purple-600">Formations</a>
+            <a href="#contact" class="block py-2 hover:text-purple-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="relative h-96 overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <img src="assets/image/slide2.jpg" alt="Bannière IBH Consulting" class="w-full h-full object-cover">
+            <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">IBH Consulting 2.0</h1>
+                    <p class="text-xl md:text-2xl text-white max-w-2xl mx-auto">Design & Stratégie Digitale pour booster votre présence en ligne</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="apropos" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">À propos de moi</h2>
+                
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/3">
+                        <img src="assets/image/profil.jpg" alt="Mourtalla Ciss" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-lg mb-4">Je suis <strong>Mourtalla Ciss</strong>, designer graphique, vidéaste, community manager, coach et formateur à <strong>GomyCode Sénégal</strong>.</p>
+                        <p class="text-lg mb-4">J'aide les marques à se démarquer grâce à une <strong>identité visuelle forte</strong>, une <strong>stratégie digitale efficace</strong> et des <strong>formations pratiques</strong> adaptées à tous les niveaux.</p>
+                        <p class="text-lg">Avec plus de <strong>2000 personnes formées</strong>, j'accompagne étudiants, professionnels et entrepreneurs à développer leurs compétences en <strong>design, marketing digital, bureautique et gestion de contenu</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Mes Services</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-purple-600 text-3xl mb-4">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Design graphique</h3>
+                        <p>Création de logos, flyers, affiches et vidéos professionnelles.</p>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-orange-600 text-3xl mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Community Management</h3>
+                        <p>Gestion de vos réseaux sociaux pour engager votre audience.</p>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Formations</h3>
+                        <p>Bureautique, graphisme et outils numériques pour tous les niveaux.</p>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-blue-600 text-3xl mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Stratégie marketing digital</h3>
+                        <p>Développement de stratégies pour améliorer votre visibilité en ligne.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">Portfolio</h2>
+                <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Voici un aperçu de mon travail, réalisé avec passion et précision.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Portfolio Item 1 -->
+                    <a href="https://www.behance.net/gallery/216109609/Cration-de-Logo-pour-Prokhane-Beauty" target="_blank" class="group">
+                        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <img src="assets/image/Image2.png" alt="Création de Logo" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg">Création de Logo</h3>
+                                <p class="text-gray-600">Prokhane Beauty</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Portfolio Item 2 -->
+                    <a href="https://www.behance.net/gallery/226335019/Affiche-Social-Media/modules/1294452797" target="_blank" class="group">
+                        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <img src="assets/image/image1.png" alt="Affiches Social Media" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg">Affiches Social Media</h3>
+                                <p class="text-gray-600">Campagnes digitales</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Portfolio Item 3 -->
+                    <a href="https://www.behance.net/gallery/216071467/Social-media/modules/1230146567" target="_blank" class="group">
+                        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <img src="assets/image/image3.png" alt="Campagne Digitale" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg">Campagne Digitale</h3>
+                                <p class="text-gray-600">Stratégie réseaux sociaux</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="text-center mt-12">
+  <a href="https://www.behance.net/mcdesign_le_patriote" target="_blank" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+    Voir tous les projets sur Behance
+  </a>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="formation" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">Formations</h2>
+                <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Formez-vous avec des programmes sur mesure, adaptés à tous les niveaux pour booster vos compétences professionnelles.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Formation 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-palette text-purple-600 mr-2"></i>
+                            Infographie & Design
+                        </h3>
+                        <p>Maîtrisez Photoshop, Illustrator, Canva et bien plus pour créer des visuels percutants.</p>
+                    </div>
+                    
+                    <!-- Formation 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-bullhorn text-orange-600 mr-2"></i>
+                            Marketing Digital
+                        </h3>
+                        <p>Apprenez les bases du marketing en ligne, de la publicité sponsorisée à la gestion de contenu.</p>
+                    </div>
+                    
+                    <!-- Formation 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-file-invoice text-green-600 mr-2"></i>
+                            Bureautique
+                        </h3>
+                        <p>Formation complète en Word, Excel, PowerPoint et Google Workspace pour une meilleure productivité.</p>
+                    </div>
+                    
+                    <!-- Formation 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            Community Management
+                        </h3>
+                        <p>Créez, planifiez et analysez vos publications pour booster votre visibilité sur les réseaux sociaux.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="chiffres" class="bg-nuit text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">+2000 personnes formées par IBH Consulting 2.0</h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto">Nous avons accompagné des centaines de débutants et étudiants à se professionnaliser dans les domaines les plus demandés du digital.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Stat 1 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2 counter" data-target="2000">0</div>
+                        <p>Personnes formées au total</p>
+                    </div>
+                    
+                    <!-- Stat 2 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2 counter" data-target="1400">0</div>
+                        <p>Étudiants & Débutants accompagnés</p>
+                    </div>
+                    
+                    <!-- Stat 3 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2 counter" data-target="600">0</div>
+                        <p>Professionnels formés</p>
+                    </div>
+                    
+                    <!-- Stat 4 -->
+                    <div>
+                        <div class="text-4xl font-bold mb-2 counter" data-target="4">0</div>
+                        <p>Domaines d'expertise</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+  <a href="https://wa.me/221780130424" target="_blank"
+     class="inline-block bg-nuit text-white hover:bg-blue-900 font-bold py-3 px-6 rounded-lg transition-colors">
+    Je veux me former
+  </a>
+</div>
+
+            </div>
+        </section>
+<!-- Testimonials Section -->
+<section id="temoignages" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-4">Témoignages</h2>
+    <p class="text-center text-lg mb-12 max-w-2xl mx-auto">
+      Ils nous ont fait confiance et partagent leur expérience avec IBH Consulting 2.0.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <img src="https://picsum.photos/100?random=7" alt="Fatou Ndiaye" class="w-12 h-12 rounded-full mr-4">
+          <div>
+            <h4 class="font-bold">Fatou Ndiaye</h4>
+            <p class="text-gray-600 text-sm">Graphiste Freelance</p>
+          </div>
+        </div>
+        <p>"Grâce à la formation en graphisme, j'ai pu lancer mon agence de design. Merci IBH Consulting pour votre accompagnement."</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <img src="https://picsum.photos/100?random=8" alt="Mamadou Diop" class="w-12 h-12 rounded-full mr-4">
+          <div>
+            <h4 class="font-bold">Mamadou Diop</h4>
+            <p class="text-gray-600 text-sm">Entrepreneur</p>
+          </div>
+        </div>
+        <p>"Une équipe sérieuse et professionnelle. La formation en marketing digital m'a permis de booster mes ventes."</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <img src="https://picsum.photos/100?random=9" alt="Tabara Ndao" class="w-12 h-12 rounded-full mr-4">
+          <div>
+            <h4 class="font-bold">Tabara Ndao</h4>
+            <p class="text-gray-600 text-sm">Etudiante</p>
+          </div>
+        </div>
+        <p>"Vous avez été à la hauteur, coach ! Malgré le temps limité, vous avez su gérer les cours avec professionnalisme et détermination."</p>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <img src="https://picsum.photos/100?random=11" alt="Tamsir Dia" class="w-12 h-12 rounded-full mr-4">
+          <div>
+            <h4 class="font-bold">Tamsir Dia</h4>
+            <p class="text-gray-600 text-sm">Etudiant</p>
+          </div>
+        </div>
+        <p>
+          "Merci pour votre disponibilité et votre soutien tout au long de ma formation.
+          Vous avez toujours été là, même tard le soir.
+          C’était un réel plaisir de travailler avec vous, Coach Mourtalla Ciss."
+        </p>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <img src="https://picsum.photos/100?random=12" alt="Aminata Gueye" class="w-12 h-12 rounded-full mr-4">
+          <div>
+            <h4 class="font-bold">Aminata Gueye</h4>
+            <p class="text-gray-600 text-sm">Etudiante</p>
+          </div>
+        </div>
+        <p>
+          "Merci sincèrement pour votre accompagnement tout au long de cette formation.
+          Malgré nos différences, vous avez toujours su faire preuve de professionnalisme.
+          Votre patience et votre engagement ont grandement enrichi mon expérience chez GomyCode."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        </section>
+
+        <!-- Contact Section -->
+ <section id="contact" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-4">Contactez-moi</h2>
+    <p class="text-center text-lg mb-12 max-w-2xl mx-auto">
+      Un projet ? Une question ? Je suis disponible pour échanger avec vous.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <!-- Informations de contact -->
+      <div class="space-y-6">
+        <p class="flex items-center text-lg">
+          <i class="fas fa-envelope text-purple-600 mr-3"></i>
+          <a href="mailto:ibhconsulting2.0@gmail.com" class="hover:underline">ibhconsulting2.0@gmail.com</a>
+        </p>
+        <p class="flex items-center text-lg">
+          <i class="fas fa-phone-alt text-green-600 mr-3"></i>
+          <a href="tel:+221780130424" class="hover:underline">+221 78 013 04 24</a>
+        </p>
+        <p class="flex items-center text-lg">
+          <i class="fab fa-whatsapp text-green-500 mr-3"></i>
+          <a href="https://wa.me/221780130424" target="_blank" class="hover:underline">WhatsApp Direct</a>
+        </p>
+
+        <div class="mt-8">
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <form id="formulaire-contact" class="bg-gray-50 p-8 rounded-lg shadow-md space-y-6" novalidate>
+        <div>
+          <label for="nom" class="block text-sm font-medium mb-1">Nom</label>
+          <div class="relative">
+            <i class="fas fa-user absolute left-3 top-3 text-gray-400"></i>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom"
+              class="w-full pl-10 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email</label>
+          <div class="relative">
+            <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+            <input type="email" id="email" name="email" placeholder="Votre email"
+              class="w-full pl-10 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Message</label>
+          <div class="relative">
+            <i class="fas fa-comment-dots absolute left-3 top-3 text-gray-400"></i>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message"
+              class="w-full pl-10 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none" required></textarea>
+          </div>
+        </div>
+
+        <button type="submit"
+  class="w-full bg-nuit text-white font-bold py-3 rounded-md hover:bg-blue-900 transition-colors">
+  Envoyer le message
+</button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-nuit text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2025 IBH Consulting 2.0 - Tous droits réservés.</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-purple-400 transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="hover:text-purple-400 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-purple-400 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="hover:text-purple-400 transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/221780130424" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = Math.ceil(target / speed);
+                
+                if (count < target) {
+                    counter.innerText = count + increment;
+                    setTimeout(animateCounters, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        
+        // Trigger counter animation when stats section is in view
+        const statsSection = document.getElementById('chiffres');
+        let animated = false;
+        
+        if (statsSection) {
+            window.addEventListener('scroll', () => {
+                const sectionTop = statsSection.getBoundingClientRect().top;
+                const triggerPoint = window.innerHeight - 100;
+                
+                if (!animated && sectionTop < triggerPoint) {
+                    animated = true;
+                    animateCounters();
+                }
+            });
+        }
+
+        // Initialize Particles.js
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 50 },
+                "color": { "value": ["#6a0dad", "#ff4500", "#1e90ff"] },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.15 },
+                "size": { "value": 6, "random": true },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": { "enable": false },
+                    "onclick": { "enable": false }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 </html>
